@@ -1,0 +1,221 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "team.showWelcomeMessage": false,
+    "editor.fontFamily": "'JetBrainsMono NF', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.editor.enablePreview": false,
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "git.confirmSync": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    },
+    "python.languageServer": "Pylance",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.refactor.renameFromFileExplorer": "autoApply",
+    "team.showFarewellMessage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[rust]": {
+        "editor.autoClosingBrackets": "always",
+        "files.trimFinalNewlines": true,
+        "editor.defaultFormatter": "matklad.rust-analyzer"
+    },
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
+    "terminal.integrated.profiles.windows": {
+        "C:\\WINDOWS\\System32\\wsl.exe (migrated)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": []
+        }
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "python.autoComplete.addBrackets": true,
+    "python.analysis.completeFunctionParens": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "workbench.colorTheme": "Noctis",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "underline",
+    "editor.cursorSurroundingLines": 5,
+    "editor.lineHeight": 0,
+    "prettier.tabWidth": 4,
+    "diffEditor.maxComputationTime": 0,
+    "files.associations": {
+        "*.log": "log"
+    },
+    "redhat.telemetry.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.commandCenter": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "jupyter.interactiveWindow.textEditor.executeSelection": false,
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "SA",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "sql1 docker",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+        }
+    ],
+    "black-formatter.importStrategy": "fromEnvironment",
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // shortcut to delete a line
+        {
+            "before": ["<leader>", "d"],
+            "after": ["d", "d"]
+        },
+        // remove highlighting
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        // save file
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        // move 5 lines up
+        {
+            "before": ["J"],
+            "after": ["5", "j"]
+        },
+        // move 5 lines down
+        {
+            "before": ["K"],
+            "after": ["5", "k"]
+        },
+        // remap join lines from J to leader j - this joins two lines
+        {
+            "before": ["<Leader>", "j"],
+            "after": ["J"]
+        },
+        // Move between windows using Ctrl-hjkl
+        {
+            "before": ["<C-h>"],
+            "after": ["<C-w>", "h"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<C-w>", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-w>", "k"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-w>", "l"]
+        },
+        // tab management
+        {
+            "before": ["<Leader>", "t", "t"],
+            "commands": [":tabnew"]
+        },
+        {
+            "before": ["<Leader>", "t", "n"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<Leader>", "t", "p"],
+            "commands": [":tabprev"]
+        },
+        // close all tabs except for current one
+        {
+            "before": ["<Leader>", "t", "o"],
+            "commands": [":tabo"]
+        },
+        // show command palette when pressing leader-p
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        // from https://hoitz.medium.com/improved-vim-setup-in-visual-studio-code-bc579501b80c
+        // toggle visibility of sidebar
+        {
+            "before": ["<Leader>", "t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["revealInExplorer"]
+        },
+        {
+            "before": ["<leader>", "r", "e"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "r", "f"],
+            "commands": ["fileutils.renameFile"]
+        },
+        {
+            "before": ["<leader>", "o", "g"],
+            "commands": ["workbench.action.showAllSymbols"]
+        },
+        // very useful! show all open editors so you can switch between open files
+        // You can also start typing and it will filter the results
+        {
+            "before": ["<leader>", "o", "o"],
+            "commands": ["workbench.action.showEditorsInActiveGroup"]
+        },
+        {
+            "before": ["<leader>", "o", "p"],
+            "commands": ["workbench.action.quickOpen"]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.commentLine", "extension.vim_escape"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+
+    // To improve performance"
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    }
+}
