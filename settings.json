@@ -1,6 +1,5 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "team.showWelcomeMessage": false,
     "editor.fontFamily": "'JetBrainsMono NF', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "workbench.editor.enablePreview": false,
@@ -21,11 +20,6 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "java.refactor.renameFromFileExplorer": "autoApply",
-    "team.showFarewellMessage": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
     "[rust]": {
         "editor.autoClosingBrackets": "always",
         "files.trimFinalNewlines": true,
@@ -44,7 +38,6 @@
         }
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "python.autoComplete.addBrackets": true,
     "python.analysis.completeFunctionParens": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
@@ -86,11 +79,15 @@
     ],
     "black-formatter.importStrategy": "fromEnvironment",
     "editor.lineNumbers": "relative",
+    "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -190,6 +187,10 @@
             "before": ["<leader>", "o", "g"],
             "commands": ["workbench.action.showAllSymbols"]
         },
+        {
+            "before": ["<leader>", "o", "t"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
         // very useful! show all open editors so you can switch between open files
         // You can also start typing and it will filter the results
         {
@@ -199,6 +200,10 @@
         {
             "before": ["<leader>", "o", "p"],
             "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.commentLine"]
         }
     ],
 
@@ -208,7 +213,6 @@
             "commands": ["editor.action.commentLine", "extension.vim_escape"]
         }
     ],
-    "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false

@@ -1,6 +1,9 @@
-// Place your key bindings in this file to override the defaults
-// from https://hoitz.medium.com/improved-vim-setup-in-visual-studio-code-bc579501b80c
+// Place your key bindings in this file to override the defaultsauto[]
 [
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.emmet.action.wrapWithAbbreviation"
+    },
     {
         "key": "ctrl+h",
         "command": "workbench.action.focusLeftGroup",
