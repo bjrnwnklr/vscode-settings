@@ -44,7 +44,7 @@
     "workbench.colorTheme": "Noctis",
     "editor.cursorBlinking": "phase",
     "editor.cursorStyle": "underline",
-    "editor.cursorSurroundingLines": 5,
+    "editor.cursorSurroundingLines": 8,
     "editor.lineHeight": 0,
     "prettier.tabWidth": 4,
     "diffEditor.maxComputationTime": 0,
@@ -109,21 +109,6 @@
         {
             "before": ["<leader>", "w"],
             "commands": ["workbench.action.files.save"]
-        },
-        // move 5 lines up
-        {
-            "before": ["J"],
-            "after": ["5", "j"]
-        },
-        // move 5 lines down
-        {
-            "before": ["K"],
-            "after": ["5", "k"]
-        },
-        // remap join lines from J to leader j - this joins two lines
-        {
-            "before": ["<Leader>", "j"],
-            "after": ["J"]
         },
         // Move between windows using Ctrl-hjkl
         {
@@ -197,9 +182,15 @@
             "before": ["<leader>", "o", "o"],
             "commands": ["workbench.action.showEditorsInActiveGroup"]
         },
+        // Go to quick open (last used files)
         {
             "before": ["<leader>", "o", "p"],
             "commands": ["workbench.action.quickOpen"]
+        },
+        // Open a file
+        {
+            "before": ["<leader>", "o", "f"],
+            "commands": ["workbench.action.files.openFile"]
         },
         {
             "before": ["<leader>", "c"],
@@ -214,8 +205,8 @@
         }
     ],
     "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
+        // "<C-a>": false,
+        // "<C-f>": false
     },
 
     // To improve performance"
